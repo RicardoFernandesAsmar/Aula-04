@@ -7,12 +7,36 @@ body{
 }
 
 header{
-    backgroud-color: #007bff;
+    background-color: #007bff;
     color: white;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    div{
+        width: 100%;
+    }
+
+    #superior{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #inferior{
+        display: flex;
+        align-items: start;
+        justify_content: start;
+
+        ul{
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
 header h1{
@@ -51,13 +75,161 @@ header button{
 }
 
 #container-input{
-    width: 80%;
+    width: 70%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     border-radius: 5px;
     background-color: white;
 }
 
 header button:houver{
-    background-color: #e6e6e6:
+    background-color: #e6e6e6;
 }
+
+main{
+    padding: 20px;
+}
+
+.slider{
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.slider::-webkit-scrollbar{
+    height: 8px;
+}
+
+.slider::-webkit-scrollbar-thumb{
+    background-color: #007bff;
+    border-radius: 10px;
+   }
+
+.produto{
+    flex: o o  auto;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+   }
+
+   .produto:hover{
+        box-shadow: rgba(0, 0, 0.5) 0px 10px 20px;
+        transition: scale(1.02);
+        transition: 0.4s ease-in-out;
+   }
+
+   .produto img{
+    max-width: 100%
+    border-radius: 5px;
+   }
+
+   .produto h3{
+    margin: 10px 0;
+   }
+
+   .produto p{
+    margin: 5px 0;
+   }
+
+   .produto button{
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+   }
+
+   .produto button:hover{
+    bacground-color: #0056b3;
+   }
+
+   #produtos-mais-vendidos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   }
+
+   footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+   }
+
+   footer nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-contente: center;
+    gap: 20px;
+   }
+
+   footer nav ul li a{
+    color: white;
+    text-dexoration: none;
+   }
+
+   footer nav ul li a:hover{
+    text-decoratinon: underline;
+   }
+
+   .redes-sociais ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   }
+
+   .redes-sociais ul li a{
+    color: white;
+    text-decoration: none;
+   }
+
+   .redes-sociais ul li a:hover{
+        text-decoration: underline;
+   }
+
+   #carrinho{
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: solid 1px #ddd;
+    border-radius: 8px;
+   }
+
+   #carrinho h2{
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+   }
+
+   .item img{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 8px;
+   }
+
+   .info{
+    flex: 1
+   }
+
